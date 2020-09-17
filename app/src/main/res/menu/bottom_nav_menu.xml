@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/navigation_eve"
+        android:icon="@drawable/eve"
+        android:title="@string/title_all" />
+    <item
+        android:id="@+id/navigation_tasks"
+        android:icon="@drawable/tasks"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_meetings"
+        android:icon="@drawable/meetings"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_pn"
+        android:icon="@drawable/pn"
+        android:title="@string/title_notifications" />
+    <item
+        android:id="@+id/navigation_nn"
+        android:icon="@drawable/nn"
+        android:title="@string/Negative_notes" />
+
+</menu>

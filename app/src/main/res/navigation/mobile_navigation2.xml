@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/navigation_eve">
+
+    <fragment
+        android:id="@+id/navigation_eve"
+        android:name="com.example.spesuez.Evaluation.ui.TotalEvaluation.TotalEvaluation"
+        android:label="@string/title_all"
+        tools:layout="@layout/eve" >
+        <action
+            android:id="@+id/action_navigation_eve_to_navigation_tasks"
+            app:destination="@id/navigation_tasks" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_tasks"
+        android:name="com.example.spesuez.Evaluation.ui.Tasks.Tasks"
+        android:label="@string/title_home"
+        tools:layout="@layout/tasks" >
+        <action
+            android:id="@+id/action_navigation_tasks_to_navigation_meetings"
+            app:destination="@id/navigation_meetings" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_meetings"
+        android:name="com.example.spesuez.Evaluation.ui.Meetings.Meetings"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/meetings" >
+        <action
+            android:id="@+id/action_navigation_meetings_to_navigation_pn"
+            app:destination="@id/navigation_pn" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_pn"
+        android:name="com.example.spesuez.Evaluation.ui.Positive_notes.PositiveNotes"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/positive_notes" >
+        <action
+            android:id="@+id/action_navigation_pn_to_navigation_nn"
+            app:destination="@id/navigation_nn" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_nn"
+        android:name="com.example.spesuez.Evaluation.ui.Negative_Notes.Negative_Notes"
+        android:label="@string/Negative_notes"
+        tools:layout="@layout/nedgative_notes" />
+</navigation>

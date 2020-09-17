@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2b426c</color>
+    <color name="colorSplashText">#F0F0F0</color>
+    <color name="colorProgressBar">#FFCE511C</color>
+    <color name="colorTextView">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="graddark">#2b426c</color>
+    <color name="gradlight">#1c7bb1</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#F8F8F0</color>
+    <color name="colorBackground">#0D4B93</color>
+    <color name="dark">#333C46</color>
+    <color name="item_background">#E9E9E6</color>
+    <color name="light">#5F5F5F</color>
+    <color name="back_lighter">#4396FF</color>
+</resources>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="329dp"
+        android:background="@color/colorBackground"
+        android:foregroundGravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="Task Evaluation App"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTextView"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="311dp"
+            android:layout_height="135dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:drawingCacheQuality="auto"
+            android:duplicateParentState="false"
+            app:srcCompat="@drawable/boy" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/century"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Name"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBackground"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/committe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:fontFamily="@font/century"
+            android:gravity="center"
+            android:text="Committee"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTextView"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorTextView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/century"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Choose the month"
+            android:textColor="@color/colorBackground"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:max="13"
+            android:min="1"
+            android:progress="1"
+            android:progressDrawable="@drawable/seekbar_progressbar"
+            android:thumbTintMode="multiply" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="183dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:fontFamily="@font/century"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Month:"
+                android:textColor="@color/colorBackground"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/month"
+                android:layout_width="215dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:fontFamily="@font/century"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Jaunary"
+                android:textColor="@color/colorBackground"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button3"
+            android:fontFamily="@font/century"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Show Evaluation"
+            android:textColor="@color/colorTextView"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button3"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Log out"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextView"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    tools:context=".ui.home.events.EventDetailsActivity">
+
+    <TextView
+        android:id="@+id/event_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/button12"
+        android:fontFamily="@font/calibri"
+        android:gravity="center"
+        android:maxWidth="@dimen/_160sdp"
+        android:minWidth="@dimen/_120sdp"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:text="Event"
+        android:textColor="@color/colorTextView"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/imageSlider"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button7"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderCircularHandlerEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="1"
+        app:sliderStartAutoCycle="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button14"
+        android:fontFamily="@font/calibri"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:text="About Event "
+        android:textColor="@color/colorTextView"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/event_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:text="information"
+                    android:fontFamily="@font/calibri"
+                    android:textColor="@color/graddark"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+        </ScrollView>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_12sdp"
+            android:background="@drawable/button11"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="113dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

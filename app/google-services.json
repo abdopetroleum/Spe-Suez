@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "572029347700",
+    "firebase_url": "https://spe-suez.firebaseio.com",
+    "project_id": "spe-suez",
+    "storage_bucket": "spe-suez.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572029347700:android:bae879cea97a6f19ed2e21",
+        "android_client_info": {
+          "package_name": "com.spe.spesuez"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572029347700-1061utig3nha30q6lfp31eqmq1s19led.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.spe.spesuez",
+            "certificate_hash": "7744b8f763bbfdcef173110dcb002a9b3ba851bb"
+          }
+        },
+        {
+          "client_id": "572029347700-psv5oisris24vl0gt8d4ijt6cvrhv7qc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDlAg1TEkJ-EjTPeznqXnTaCvmMXA7OV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572029347700-psv5oisris24vl0gt8d4ijt6cvrhv7qc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

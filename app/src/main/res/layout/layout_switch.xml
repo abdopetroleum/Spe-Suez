@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:gravity="right"
+    android:orientation="vertical">
+
+    <Switch
+        android:id="@+id/switch_type"
+        style="@style/Headline"
+        android:layout_width="wrap_content"
+        android:minHeight="@dimen/_30sdp"
+        android:minWidth="@dimen/_40sdp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/button"
+        android:text="Scientific "
+        android:textColor="@color/colorBackground"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:thumb="@drawable/events_design"
+        android:track="@drawable/custom_track" />
+
+
+
+
+
+</LinearLayout>

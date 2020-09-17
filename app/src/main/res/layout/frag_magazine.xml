@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="1dp"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:id="@+id/magazine_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/_20sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@drawable/button10"
+                                android:fontFamily="@font/calibri"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/_12sdp"
+                                android:paddingTop="@dimen/_4sdp"
+                                android:paddingRight="@dimen/_12sdp"
+                                android:paddingBottom="@dimen/_4sdp"
+                                android:text="Meet Our"
+                                android:textColor="@color/colorTextView"
+                                android:textSize="@dimen/_24sdp"
+                                android:textStyle="bold" />
+
+                            <com.lightfire.gradienttextcolor.GradientTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:fontFamily="@font/calibri"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/_12sdp"
+                                android:paddingTop="@dimen/_4sdp"
+                                android:paddingRight="@dimen/_12sdp"
+                                android:paddingBottom="@dimen/_4sdp"
+                                android:text="Magazines"
+                                android:textColor="@color/graddark"
+                                android:textSize="@dimen/_36sdp"
+                                android:textStyle="bold"
+                                app:gradientEnd="@color/graddark"
+                                app:gradientStart="@color/gradlight" />
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/_145sdp"
+                                android:orientation="horizontal"
+                                android:weightSum="1.0">
+
+                                <ImageView
+                                    android:id="@+id/echo"
+                                    android:layout_width="0dip"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="@dimen/_8sdp"
+                                    android:layout_weight=".5"
+                                    android:background="@drawable/button14"
+                                    android:padding="@dimen/_8sdp"
+                                    android:src="@drawable/echo"
+                                    android:textSize="12sp" />
+
+                                <ImageView
+                                    android:id="@+id/criterion"
+                                    android:layout_width="0dip"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="@dimen/_8sdp"
+                                    android:layout_weight=".5"
+                                    android:background="@drawable/button15"
+                                    android:paddingLeft="@dimen/_8sdp"
+                                    android:paddingRight="@dimen/_12sdp"
+                                    android:src="@drawable/criterion"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/_145sdp"
+                            android:orientation="horizontal"
+                            android:weightSum="1.0">
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight=".25" />
+
+                            <ImageView
+                                android:id="@+id/ultra"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_margin="@dimen/_8sdp"
+                                android:layout_weight=".5"
+                                android:background="@drawable/button17"
+                                android:paddingLeft="@dimen/_8sdp"
+                                android:paddingRight="@dimen/_12sdp"
+                                android:src="@drawable/ultra4"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_12sdp"
+                    android:background="@drawable/button11"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:layout_editor_absoluteX="113dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/magazine_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_12sdp"
+            android:background="@drawable/button11"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_editor_absoluteX="113dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

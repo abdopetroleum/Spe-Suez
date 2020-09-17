@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_260sdp"
+        android:background="@drawable/wave"
+        android:paddingBottom="@dimen/_52sdp"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SPE International"
+                android:textSize="@dimen/_28sdp"
+                android:textColor="@color/colorTextView"
+                android:layout_gravity="center"
+                android:fontFamily="@font/calibri"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_16sdp"/>
+            <TextView
+                android:fontFamily="@font/calibri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:textColor="@color/colorTextView"
+                android:text="The Largest Individual-Member Organization Serving Managers, Engineers, Scientists And Other Professionals Worldwide In The Upstream Segment Of The Oil And Gas Industry."
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SPE SUEZ"
+                android:textSize="@dimen/_28sdp"
+                android:textColor="@color/colorTextView"
+                android:layout_gravity="center"
+                android:fontFamily="@font/calibri"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_16sdp"/>
+            <TextView
+                android:fontFamily="@font/calibri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:textColor="@color/colorTextView"
+                android:text="As a Part of SPE International, SPE Suez is a Leading Student Activity in Suez University Providing Technical and Non-Technical Services for All Student Specially Petrolium and Mining Engineers Students."
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_50sdp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Our Vision  "
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:textSize="@dimen/_28sdp"
+                    android:background="@drawable/button10"
+                    android:textColor="@color/colorTextView"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/calibri"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_16sdp"/>
+                <TextView
+                    android:fontFamily="@font/calibri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:textColor="@color/colorBackground"
+                    android:text="Our Vision Is Empowering The Students And Graduates To Compete In The National And International Plenary Of The Challenging Oil And Gas Industry."
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Our Mission "
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:textSize="@dimen/_28sdp"
+                    android:background="@drawable/button10"
+                    android:textColor="@color/colorTextView"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/calibri"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_16sdp"/>
+                <TextView
+                    android:fontFamily="@font/calibri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:textColor="@color/colorBackground"
+                    android:text="Bridging The Gap Between Academic Theories And Their Implementation Practically As Well As Developing The Students’ Full Skills Set, Their Technical Knowledge And Their Personal Skills By Providing More Technical Courses, Sessions And Professional Technical Assistance."
+                    />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|bottom"
+            android:paddingBottom="10dp">
+
+            <com.shaishavgandhi.loginbuttons.GoogleButton
+                android:id="@+id/google"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                app:iconSize="30dp"
+                app:roundedCorner="true"
+                app:roundedCornerRadius="@dimen/_38sdp">
+
+            </com.shaishavgandhi.loginbuttons.GoogleButton>
+
+            <com.shaishavgandhi.loginbuttons.FacebookButton
+                android:id="@+id/facebook"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+
+                android:layout_toEndOf="@+id/google"
+                android:layout_toRightOf="@+id/google"
+                android:layout_weight="1"
+                app:iconSize="30dp"
+                app:roundedCorner="true"
+                app:roundedCornerRadius="@dimen/_38sdp">
+
+            </com.shaishavgandhi.loginbuttons.FacebookButton>
+
+            <com.shaishavgandhi.loginbuttons.TwitterButton
+                android:id="@+id/twitter"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@+id/facebook"
+                android:layout_toRightOf="@+id/facebook"
+                app:iconSize="30dp"
+                app:roundedCorner="true"
+                app:roundedCornerRadius="@dimen/_38sdp" />
+            <com.shaishavgandhi.loginbuttons.LinkedInButton
+                android:id="@+id/linkedin"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@+id/twitter"
+                android:layout_toRightOf="@+id/twitter"
+                app:iconSize="30dp"
+                app:roundedCorner="true"
+                app:roundedCornerRadius="@dimen/_38sdp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/event_card_view"
+    card_view:cardElevation="2dp"
+    android:paddingBottom="@dimen/_20sdp"
+    card_view:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/event_info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/button12"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/calibri"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:minWidth="@dimen/_120sdp"
+            android:maxWidth="@dimen/_160sdp"
+            android:textColor="@color/colorTextView"
+            android:textSize="20sp"
+            android:layout_marginLeft="4dp"
+            />
+        <ImageView
+            android:id="@+id/event_info_image"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:background="@drawable/button7"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+
+            android:layout_marginBottom="8dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:drawingCacheQuality="auto"
+            android:duplicateParentState="false" />
+
+        <Switch
+            android:id="@+id/my_event_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="right"
+            android:textOff="Not interested"
+            android:textOn="Interested"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:thumb="@drawable/events_design"
+            android:track="@drawable/custom_track" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/spape"
+            android:layout_height="@dimen/_3sdp"
+            android:background="@drawable/button13"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+           android:layout_marginBottom="@dimen/_10sdp"/>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
